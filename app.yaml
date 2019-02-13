@@ -1,0 +1,11 @@
+runtime: nodejs
+env: flex
+
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: dist/web-dev-day-angular/index.html
+  upload: dist/web-dev-day-angular/index.html
+- url: /
+  static_dir: dist/web-dev-day-angular
